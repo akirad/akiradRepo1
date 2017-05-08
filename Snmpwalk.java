@@ -22,7 +22,7 @@ public class Snmpwalk {
     private String portNum;
     private String usage;
 
-    Snmpwalk() throws IOException {
+    Snmpwalk() {
         // Set default value.
         targetAddr = null;
         oidStr = null;
@@ -166,8 +166,8 @@ public class Snmpwalk {
 
     // Delegate main function to Snmpwalk.
     public static void main(String[] args) {
+        Snmpwalk snmpwalk = new Snmpwalk();
         try{
-            Snmpwalk snmpwalk = new Snmpwalk();
             snmpwalk.setArgs(args);
             snmpwalk.execSnmpwalk();
         }
