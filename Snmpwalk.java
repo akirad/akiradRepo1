@@ -80,11 +80,11 @@ public class Snmpwalk {
                     continue;
                 }
                 System.out.println(
-                        varBinding.getOid() +
-                                " : " +
-                                varBinding.getVariable().getSyntaxString() +
-                                " : " +
-                                varBinding.getVariable());
+                    varBinding.getOid() +
+                            " : " +
+                    varBinding.getVariable().getSyntaxString() +
+                            " : " +
+                    varBinding.getVariable());
             }
         }
         snmp.close();
